@@ -1,9 +1,13 @@
 #!/usr/bin/python3
 
 import sys
-x=0.0
+x=0
 
 for line in sys.stdin:
     print(line.rstrip())
-    x+=float(line.rstrip())
+    try:
+        x+=int(line)
+    except:
+        x+=float(line)
+    #x+=float(line.rstrip())
 print("合計",x)
