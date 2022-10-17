@@ -1,0 +1,9 @@
+#!/usr/bin/python3
+
+import sys
+x=0.0
+
+for line in sys.stdin:
+    print(line.rstrip())
+    x+=float(line.rstrip())
+print("合計",x)
