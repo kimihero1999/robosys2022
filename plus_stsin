@@ -10,4 +10,4 @@ for line in sys.stdin:
     except:
         x+=float(line)
     #x+=float(line.rstrip())
-print("合計",x)
+print("sum",x)
